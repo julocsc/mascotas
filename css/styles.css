@@ -29,6 +29,20 @@ p {
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
 }
+.section {
+      margin-bottom: 20px;
+    }
+    .label {
+      font-weight: 600;
+      color: #0f172a;
+    }
+    .contact {
+      background: #f0f9ff;
+      padding: 15px;
+      border-left: 6px solid #38bdf8;
+      border-radius: 8px;
+      text-align: center;
+    }
 .btn {
   display: inline-flex;
   align-items: center;
@@ -50,14 +64,23 @@ p {
 .btn i {
   margin-right: 0.5rem;
 }
-.footer {
-  font-size: 0.8rem;
-  margin-top: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+ .footer {
+      text-align: center;
+      font-size: 0.8em;
+      color: #555;
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
 .footer i {
-  margin-right: 0.3rem;
-  color: #25D366;
-}
+      color: #25D366;
+      font-size: 1em;
+    }
+    @media screen and (max-width: 600px) {
+      .wa-button {
+        display: block;
+        width: 100%;
+      }
+    }
