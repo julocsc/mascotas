@@ -53,16 +53,27 @@
       border-radius: 8px;
       text-align: center;
     }
-    .wa-button {
-      display: inline-block;
-      background: #25D366;
-      color: white;
-      padding: 12px 20px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      margin: 8px 6px;
-    }
+  .wa-button {
+  display: inline-block;
+  background: #25D366;
+  color: white;
+  padding: 10px 16px; /* Reducido para móviles */
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 6px 4px;
+  font-size: 0.95rem;
+}
+
+@media screen and (max-width: 600px) {
+  .wa-button {
+    display: inline-block;
+    width: auto; /* Cambiado de 100% a auto */
+    font-size: 0.9rem;
+    padding: 8px 14px; /* más compacto */
+  }
+}
+
     .wa-button:hover {
       background: #1ebe5d;
     }
