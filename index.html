@@ -1,115 +1,26 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>¡Hola! Me llamo Luna</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Poppins', sans-serif;
-      background: url('https://i.imgur.com/Mu2p7vU.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: #333;
-    }
-    .container {
-      max-width: 600px;
-      margin: 40px auto;
-      background: rgba(255, 255, 255, 0.95);
-      padding: 30px;
-      border-radius: 16px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    }
-    h1 {
-      color: #1e40af;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    img {
-      max-width: 100%;
-      border-radius: 12px;
-      margin-bottom: 20px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .section {
-      margin-bottom: 20px;
-    }
-    .label {
-      font-weight: 600;
-      color: #0f172a;
-    }
-    .contact {
-      background: #f0f9ff;
-      padding: 15px;
-      border-left: 6px solid #38bdf8;
-      border-radius: 8px;
-      text-align: center;
-    }
-    .wa-button {
-      display: inline-block;
-      background: #25D366;
-      color: white;
-      padding: 12px 20px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      margin: 8px 6px;
-    }
-    .wa-button:hover {
-      background: #1ebe5d;
-    }
-    .footer {
-      text-align: center;
-      font-size: 0.8em;
-      color: #555;
-      margin-top: 30px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-    }
-    .footer i {
-      color: #25D366;
-      font-size: 1em;
-    }
-    @media screen and (max-width: 600px) {
-      .wa-button {
-        display: block;
-        width: 100%;
-      }
-    }
-  </style>
+  <title>Mascota Extraviada</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="container">
-    <h1>🐶 ¡Hola! Me llamo Luna</h1>
-    <img src="images/luna.jpg" alt="Foto de Luna" />
-    <div class="section">
-      <p><span class="label">Edad:</span> 2 años</p>
-      <p><span class="label">Raza:</span> Schnauzer miniatura</p>
-      <p><span class="label">Color:</span> Gris y blanco</p>
-      <p><span class="label">Carácter:</span> Muy juguetona, tímida con extraños</p>
-      <p><span class="label">Condiciones médicas:</span> Toma medicina diaria (por favor no alimentarla)</p>
-    </div>
-    <div class="section">
-      <p><span class="label">Última vez vista:</span> Parque Central – Miraflores, Lima</p>
-      <p><span class="label">Fecha:</span> 29 de mayo de 2025</p>
-    </div>
-    <div class="section contact">
-      <p><span class="label">Contacto:</span></p>
-      <p>Mariana – +51 987 654 321</p>
-      <a class="wa-button" href="https://wa.me/51987654321" target="_blank">📞 Llamar por WhatsApp</a>
-      <a class="wa-button" href="https://wa.me/51987654321?text=Hola%2C+encontr%C3%A9+a+Luna" target="_blank">💬 Enviar mensaje por WhatsApp</a>
-    </div>
+    <img src="images/luna.jpg" alt="Foto de mascota" class="pet-photo"/>
+    <h1>¿Has visto a Luna?</h1>
+    <p>Luna se perdió el 25 de mayo en la zona de Miraflores, Lima. Es muy amigable y responde a su nombre.</p>
+    <a class="btn btn-call" href="https://wa.me/51921435406?text=Hola%2C+vi+a+Luna+y+tengo+informaci%C3%B3n" target="_blank">
+      <i class="fab fa-whatsapp"></i>Llamar por WhatsApp
+    </a>
+    <a class="btn btn-message" href="https://wa.me/51921435406?text=Hola%2C+quiero+ayudar+con+Luna" target="_blank">
+      <i class="fab fa-whatsapp"></i>Enviar mensaje por WhatsApp
+    </a>
     <div class="footer">
-      <a href="https://wa.me/51921435406" target="_blank"><i class="fab fa-whatsapp"></i></a>
-      <span>Sistictech - Todos los derechos reservados</span>
+      <i class="fab fa-whatsapp"></i>
+      Sistictech - Todos los derechos reservados
     </div>
   </div>
 </body>
