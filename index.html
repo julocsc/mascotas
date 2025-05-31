@@ -4,19 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>¡Hola! Me llamo Luna</title>
-  <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-  <script>
-    function toggleMode() {
-      document.body.classList.toggle('dark');
-    }
-  </script>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="toggle-theme">
+    <button onclick="toggleTheme()">🌙/☀️</button>
+  </div>
   <div class="container">
     <h1>🐶 ¡Hola! Me llamo Luna</h1>
-    <img src="images/luna.jpg" alt="Foto de Luna" />
+    <img src="images/luna.jpg" alt="Foto de Luna" class="main-img" />
+    
     <div class="section">
       <p><span class="label">Edad:</span> 2 años</p>
       <p><span class="label">Raza:</span> Schnauzer miniatura</p>
@@ -24,57 +23,47 @@
       <p><span class="label">Carácter:</span> Muy juguetona, tímida con extraños</p>
       <p><span class="label">Condiciones médicas:</span> Toma medicina diaria (por favor no alimentarla)</p>
     </div>
+
     <div class="section">
       <p><span class="label">Última vez vista:</span> Parque Central – Miraflores, Lima</p>
       <p><span class="label">Fecha:</span> 29 de mayo de 2025</p>
-    </div>
-    <div class="section contact">
-      <p><span class="label">Contacto:</span></p>
-      <p>Mariana – +51 987 654 321</p>
-      <a class="wa-button" href="https://wa.me/51987654321" target="_blank">📞 Llamar por WhatsApp</a>
-      <a class="wa-button" href="https://wa.me/51987654321?text=Hola%2C+encontr%C3%A9+a+Luna" target="_blank">Enviar mensaje por WhatsApp</a>
+      <iframe src="https://maps.google.com/maps?q=Parque%20Central%20Miraflores&t=&z=15&ie=UTF8&iwloc=&output=embed" class="map"></iframe>
     </div>
 
-    <div class="recompensa">
-      <h3>🎁 Recompensa ofrecida</h3>
-      <p>Se ofrece recompensa por información que ayude a encontrar a Luna.</p>
-    </div>
-
-    <div class="gallery">
-      <img src="images/luna.jpg" alt="Luna 1">
-      <img src="images/luna.jpg" alt="Luna 2">
-      <img src="images/luna.jpg" alt="Luna 3">
-    </div>
-
-    <div class="audio">
-      <h3>🎤 Mensaje de su dueña</h3>
+    <div class="section">
+      <p><span class="label">Mensaje de su dueña:</span></p>
       <audio controls>
-        <source src="audio/mensaje.mp3" type="audio/mp3">
-        Tu navegador no soporta audio.
+        <source src="audio/mensaje.mp3" type="audio/mpeg">
+        Tu navegador no admite el audio.
       </audio>
     </div>
 
-    <div class="map">
-      <h3>📍 Mapa del último lugar visto</h3>
-      <iframe src="https://maps.google.com/maps?q=Parque%20Central%20Miraflores&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    <div class="section gallery">
+      <p><span class="label">Fotos adicionales:</span></p>
+      <img src="images/luna2.jpg" alt="Luna 2" />
+      <img src="images/luna3.jpg" alt="Luna 3" />
     </div>
 
-    <div class="testimonios">
-      <h3>📣 Testimonios</h3>
-      <p>"Vi a una perrita similar cerca del parque Kennedy hace dos días." – Testigo anónimo</p>
+    <div class="section reward">
+      🎁 <strong>Recompensa: S/ 500 por su retorno</strong>
     </div>
 
-    <div class="qr-inverso">
-      <h3>🔁 Escanea para ver esta página</h3>
-      <img src="images/qr-ejemplo.png" alt="QR inverso" style="width:100px;">
+    <div class="section contact">
+      <p><span class="label">Contacto:</span> Mariana – +51 987 654 321</p>
+      <a class="wa-button" href="https://wa.me/51987654321" target="_blank"><i class="fab fa-whatsapp"></i> Llamar por WhatsApp</a>
+      <a class="wa-button" href="https://wa.me/51987654321?text=Hola%2C+encontr%C3%A9+a+Luna" target="_blank"><i class="fab fa-whatsapp"></i> Enviar mensaje por WhatsApp</a>
     </div>
 
-    <div class="idioma">
-      <button onclick="alert('Traducción en desarrollo')">🌐 Cambiar idioma</button>
+    <div class="section share">
+      <a class="wa-button" href="https://wa.me/?text=https://tupagina.com/luna" target="_blank">
+        📤 Compartir por WhatsApp
+      </a>
     </div>
 
-    <div class="modo">
-      <button onclick="toggleMode()">🌓 Modo claro/oscuro</button>
+    <div class="section">
+      <h3>Testimonios</h3>
+      <blockquote>"La vimos por el parque en la mañana, iba asustada" – Juan</blockquote>
+      <blockquote>"Una vecina comentó que la recogió temporalmente" – Rosa</blockquote>
     </div>
 
     <div class="footer">
@@ -82,5 +71,11 @@
       <span>Sistictech - Todos los derechos reservados</span>
     </div>
   </div>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark');
+    }
+  </script>
 </body>
 </html>
