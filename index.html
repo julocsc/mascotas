@@ -6,16 +6,19 @@
   <title>¡Hola! Me llamo Luna</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="estilos.css">
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark');
+    }
+  </script>
 </head>
 <body>
-  <div class="toggle-theme">
-    <button onclick="toggleTheme()">🌙/☀️</button>
-  </div>
   <div class="container">
+    <button class="toggle-mode" onclick="toggleDarkMode()">🌓 Modo Claro/Oscuro</button>
     <h1>🐶 ¡Hola! Me llamo Luna</h1>
-    <img src="images/luna.jpg" alt="Foto de Luna" class="main-img" />
-    
+    <img src="images/luna.jpg" alt="Foto de Luna" />
+
     <div class="section">
       <p><span class="label">Edad:</span> 2 años</p>
       <p><span class="label">Raza:</span> Schnauzer miniatura</p>
@@ -27,43 +30,33 @@
     <div class="section">
       <p><span class="label">Última vez vista:</span> Parque Central – Miraflores, Lima</p>
       <p><span class="label">Fecha:</span> 29 de mayo de 2025</p>
-      <iframe src="https://maps.google.com/maps?q=Parque%20Central%20Miraflores&t=&z=15&ie=UTF8&iwloc=&output=embed" class="map"></iframe>
     </div>
 
     <div class="section">
-      <p><span class="label">Mensaje de su dueña:</span></p>
-      <audio controls>
-        <source src="audio/mensaje.mp3" type="audio/mpeg">
-        Tu navegador no admite el audio.
-      </audio>
+      <h3>🎁 Recompensa</h3>
+      <p>Se ofrece recompensa por su devolución. ¡Gracias por tu ayuda!</p>
     </div>
 
-    <div class="section gallery">
-      <p><span class="label">Fotos adicionales:</span></p>
-      <img src="images/luna2.jpg" alt="Luna 2" />
-      <img src="images/luna3.jpg" alt="Luna 3" />
+    <div class="gallery section">
+      <h3>📷 Más fotos</h3>
+      <div class="photos">
+        <img src="images/luna2.jpg" alt="Luna 2">
+        <img src="images/luna3.jpg" alt="Luna 3">
+        <img src="images/luna4.jpg" alt="Luna 4">
+      </div>
     </div>
 
-    <div class="section reward">
-      🎁 <strong>Recompensa: S/ 500 por su retorno</strong>
+    <div class="map section">
+      <h3>📍 Ubicación aproximada</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="100%" height="250" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy"></iframe>
     </div>
 
     <div class="section contact">
-      <p><span class="label">Contacto:</span> Mariana – +51 987 654 321</p>
-      <a class="wa-button" href="https://wa.me/51987654321" target="_blank"><i class="fab fa-whatsapp"></i> Llamar por WhatsApp</a>
-      <a class="wa-button" href="https://wa.me/51987654321?text=Hola%2C+encontr%C3%A9+a+Luna" target="_blank"><i class="fab fa-whatsapp"></i> Enviar mensaje por WhatsApp</a>
-    </div>
-
-    <div class="section share">
-      <a class="wa-button" href="https://wa.me/?text=https://tupagina.com/luna" target="_blank">
-        📤 Compartir por WhatsApp
-      </a>
-    </div>
-
-    <div class="section">
-      <h3>Testimonios</h3>
-      <blockquote>"La vimos por el parque en la mañana, iba asustada" – Juan</blockquote>
-      <blockquote>"Una vecina comentó que la recogió temporalmente" – Rosa</blockquote>
+      <p><span class="label">Contacto:</span></p>
+      <p>Mariana – +51 987 654 321</p>
+      <a class="wa-button" href="https://wa.me/51987654321" target="_blank">📞 Llamar por WhatsApp</a>
+      <a class="wa-button" href="https://wa.me/51987654321?text=Hola%2C+encontr%C3%A9+a+Luna" target="_blank">Enviar mensaje por WhatsApp</a>
+      <a class="wa-button" href="https://wa.me/?text=He+visto+una+mascota+perdida+%F0%9F%90%B6.+Ayuda+a+difundir:+https://tupagina.com" target="_blank">🔗 Compartir por WhatsApp</a>
     </div>
 
     <div class="footer">
@@ -71,11 +64,5 @@
       <span>Sistictech - Todos los derechos reservados</span>
     </div>
   </div>
-
-  <script>
-    function toggleTheme() {
-      document.body.classList.toggle('dark');
-    }
-  </script>
 </body>
 </html>
