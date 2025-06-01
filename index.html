@@ -53,23 +53,32 @@
       border-radius: 8px;
       text-align: center;
     }
-  .wa-button {
-  display: inline-block;
+ .buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.wa-button {
   background: #25D366;
   color: white;
-  padding: 10px 16px; /* Reducido para móviles */
+  padding: 10px 16px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
-  margin: 6px 4px;
-  font-size: 0.95rem;
+  text-align: center;
+  min-width: 220px;
+  max-width: 240px;
+  flex: 1 1 auto;
+  box-sizing: border-box;
+  transition: background 0.3s ease;
 }
 
-
-
-    .wa-button:hover {
-      background: #1ebe5d;
-    }
+.wa-button:hover {
+  background: #1ebe5d;
+}
     .footer {
       text-align: center;
       font-size: 0.8em;
@@ -84,12 +93,12 @@
       color: #25D366;
       font-size: 1em;
     }
-   @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .wa-button {
-    display: inline-block;
-    width: auto; /* Cambiado de 100% a auto */
-    font-size: 1.2rem;
-    padding: 8px 14px; /* más compacto */
+    font-size: 0.9rem;
+    padding: 10px 14px;
+    min-width: 100%;
+    max-width: 100%;
   }
 }
   </style>
